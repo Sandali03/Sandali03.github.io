@@ -1,0 +1,822 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<html>
+    <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="https://limitlesslollies.com.au/cdn/shop/files/Limitless_lollies_rectangle_design_2.png?v=1672982812&width=250" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Shop
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Shop All</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Individual Wrapped Lollies</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Pre-Mixed Bags</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Aussie Nostalgia</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">4D Gummies</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Fudge</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Pickles</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Mystery Packs</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Pick N' Mix</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">International</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Dietary Requirements</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cs-contact-group">
+                <a href="tel:+84 1985 33 999" class="cs-phone">
+                    <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                    +61 1985 33 999
+                </a>
+                <div class="cs-social">
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+        </div>
+    </header>
+<body>
+
+    <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1785">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Best Lollies of Australia</span>
+            <h1 class="cs-title">Your Ultimate Destination for Delicious Lollies</h1>
+            <p class="cs-text">
+                Discover the Joy of Sweets at Sweet Haven: Where Every Lolly is a Treat!
+            </p>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <img src="/background.png" alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+
+    <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+    <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+    <img class="cs-graphic cs-graphic-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="RTsbs-1594">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/663B8D0A-8DB0-4B4C-BF0C-3A3A54512943.jpg?v=1695285153&width=120">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/663B8D0A-8DB0-4B4C-BF0C-3A3A54512943.jpg?v=1695285153&width=600">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg" alt="mechanic" width="413" height="500">
+            </picture>
+            <!--Top Right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/57F598AB-1D69-4236-9850-D69184CC6398.heic?v=1704255636&width=493">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/57F598AB-1D69-4236-9850-D69184CC6398.heic?v=1704255636&width=493">
+                <img loading="lazy" decoding="async" src="https://limitlesslollies.com.au/cdn/shop/files/57F598AB-1D69-4236-9850-D69184CC6398.heic?v=1704255636&width=493" alt="mechanic" width="413" height="280">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Pre-Mixed Bags</h2>
+            <p class="cs-text">
+                Shop from our range of retro, sour, flavoured, and holiday-themed pre-mixed bags.
+            </p>
+            <a href="" class="cs-button-solid">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-1594">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/melody_pop.webp?v=1674189046&width=750">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/melody_pop.webp?v=1674189046&width=750">
+                <img id="premixed-img2" loading="lazy" decoding="async" src="https://limitlesslollies.com.au/cdn/shop/files/melody_pop.webp?v=1674189046&width=750" alt="mechanic" width="413" height="500">
+            </picture>
+            <!--Top Right image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/products/rude-dudes-possum-poop.jpg?v=1673774787&width=493">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/products/rude-dudes-possum-poop.jpg?v=1673774787&width=493">
+                <img loading="lazy" decoding="async" src="https://limitlesslollies.com.au/cdn/shop/products/rude-dudes-possum-poop.jpg?v=1673774787&width=493" alt="mechanic" width="413" height="280">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Individual Lollies</h2>
+            <p class="cs-text">
+                Is a whole bag too much commitment?
+                <br>
+                Thats okay!
+                <br>
+                We have a range of individual lollies that just might tickle your fancy.
+            </p>
+            <a href="" class="cs-button-solid">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Triplet             -->
+<!-- ============================================ -->
+
+<section id="RTsbst-1594">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/download_0033ea51-74f4-43df-aef3-3e5a00f24545.jpg?v=1691998729&width=493">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/download_0033ea51-74f4-43df-aef3-3e5a00f24545.jpg?v=1691998729&width=493">
+                <img loading="lazy" decoding="async" src="https://limitlesslollies.com.au/cdn/shop/files/download_0033ea51-74f4-43df-aef3-3e5a00f24545.jpg?v=1691998729&width=493" alt="mechanic" width="413" height="500">
+            </picture>
+            <!--Top Right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/Screen_Shot_2023-01-22_at_4.44.51_pm.png?v=1674377118&width=750">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/Screen_Shot_2023-01-22_at_4.44.51_pm.png?v=1674377118&width=750">
+                <img id="premixed-img1" loading="lazy" decoding="async" src="https://limitlesslollies.com.au/cdn/shop/files/Screen_Shot_2023-01-22_at_4.44.51_pm.png?v=1674377118&width=750" alt="mechanic" width="413" height="280">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">International Range</h2>
+            <p class="cs-text">
+                So Australia's not good enough for you?
+                <br>
+                Have a little peak at our international range.
+                <br>
+                Maybe that will impress you more.l
+            </p>
+            <a href="" class="cs-button-solid">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Collection                  -->
+<!-- ============================================ -->
+
+<!--
+    To add a 4th or 5th collection or more, copy and paste the cs-button and change it's data-filter to the next number, in this case it's 4. Do the same to the cs-listing and its data-category number. And that's it!
+-->
+
+<section id="collection-1602">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">New Collection</h2>
+            <div class="cs-button-group">
+                <button class="cs-button" data-filter="one">
+                    New Arrival
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Top Rating
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Best Seller
+                </button>
+            </div>
+        </div>
+        <div class="cs-listing-wrapper">
+            <!--Listing 1-->
+            <div class="cs-listing" data-category="one">
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/products/image_babfc96c-b046-4913-bf8c-4a4c72c11d5c.jpg?v=1679977768&width=493">
+                                <source media="(min-width: 601px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/products/image_babfc96c-b046-4913-bf8c-4a4c72c11d5c.jpg?v=1679977768&width=493">
+                                <img loading="lazy" decoding="async"
+                                        src="https://limitlesslollies.com.au/cdn/shop/products/image_babfc96c-b046-4913-bf8c-4a4c72c11d5c.jpg?v=1679977768&width=493"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">-20%</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Zombie Chews - Mega Size</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$2.40</span>
+                                    <span class="cs-was-price">$3.00</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <button class="cs-buy">
+                                    <img class="cs-basket"
+                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/files/image_bda5e3f7-26d8-41c8-84ff-3a9f7c7d3d6b.heic?v=1682663631&width=493">
+                                <source media="(min-width: 601px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/files/image_bda5e3f7-26d8-41c8-84ff-3a9f7c7d3d6b.heic?v=1682663631&width=493">
+                                <img loading="lazy" decoding="async"
+                                        src="https://limitlesslollies.com.au/cdn/shop/files/image_bda5e3f7-26d8-41c8-84ff-3a9f7c7d3d6b.heic?v=1682663631&width=493"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">-20%</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Gummy-licious</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$9.60</span>
+                                    <span class="cs-was-price">$12.00</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <button class="cs-buy">
+                                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/products/jo-jo-ICC.jpg?v=1673772934&width=493">
+                                <source media="(min-width: 601px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/products/jo-jo-ICC.jpg?v=1673772934&width=493">
+                                <img loading="lazy" decoding="async"
+                                        src="https://limitlesslollies.com.au/cdn/shop/products/jo-jo-ICC.jpg?v=1673772934&width=493"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Icecream Chew Bars</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$0.95</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <button class="cs-buy">
+                                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/products/ScreenShot2023-01-29at3.22.13pm.png?v=1674976972&width=493">
+                                <source media="(min-width: 601px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/products/ScreenShot2023-01-29at3.22.13pm.png?v=1674976972&width=493">
+                                <img loading="lazy" decoding="async"
+                                        src="https://limitlesslollies.com.au/cdn/shop/products/ScreenShot2023-01-29at3.22.13pm.png?v=1674976972&width=493"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">-50%</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Zappo Millions</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$2.00</span>
+                                    <span class="cs-was-price">$4.00</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <button class="cs-buy">
+                                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/files/download_8bc16d6d-11c9-43eb-b7c3-65b7795b921f.jpg?v=1697618442&width=493">
+                                <source media="(min-width: 601px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/files/download_8bc16d6d-11c9-43eb-b7c3-65b7795b921f.jpg?v=1697618442&width=493">
+                                <img loading="lazy" decoding="async"
+                                        src="https://limitlesslollies.com.au/cdn/shop/files/download_8bc16d6d-11c9-43eb-b7c3-65b7795b921f.jpg?v=1697618442&width=493"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">-20%</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Sunfruit Faces - 100g</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$4.00</span>
+                                    <span class="cs-was-price">$5.00</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <button class="cs-buy">
+                                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cs-item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/files/IMG-5976.heic?v=1697517720&width=493">
+                                <source media="(min-width: 601px)"
+                                        srcset="https://limitlesslollies.com.au/cdn/shop/files/IMG-5976.heic?v=1697517720&width=493">
+                                <img loading="lazy" decoding="async"
+                                        src="https://limitlesslollies.com.au/cdn/shop/files/IMG-5976.heic?v=1697517720&width=493"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">-20%</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Peachy Keen - 300g</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$9.49</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <button class="cs-buy">
+                                    <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                            alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                 Promotions                   -->
+<!-- ============================================ -->
+
+<section id="promotions-1567">
+    <div class="cs-content">
+        <h2 class="cs-title">Promotions</h2>
+    </div>
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/IMG-8601.heic?v=1712491205&width=600">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/IMG-8601.heic?v=1712491205&width=600">
+                    <img loading="lazy" decoding="async" src="https://limitlesslollies.com.au/cdn/shop/files/IMG-8601.heic?v=1712491205&width=600" alt="room" width="630" height="354">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-tag">Pre mixed lollies</span>
+                    <h2 class="cs-h2">Get an Extra 30% off</h2>
+                    <a href="#" class="cs-button-solid" onclick="openModal(event)">Shop Now</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-14142449.png?v=1713075905&width=600">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-14142449.png?v=1713075905&width=600">
+                    <img loading="lazy" decoding="async" src="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-14142449.png?v=1713075905&width=600" alt="room" width="630" height="354">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-tag">Mystery Bags - Let us choose your fate</span>
+                    <h2 class="cs-h2">Buy 2 Items - Get 1 for Free</h2>
+                    <a href="#" class="cs-button-solid" onclick="openModal(event)">Shop Now</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<div id="collectionModal" class="cs-modal">
+    <div class="cs-modal-content">
+        <span class="cs-close" onclick="closeModal()">&times;</span>
+        <!-- New Collection Content -->
+        <section id="collection-1602">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h2 class="cs-title">Buy Now</h2>
+                </div>
+                <div class="cs-listing-wrapper">
+                    <!--Listing 1-->
+                    <div class="cs-listing" data-category="one">
+                        <!-- Product Items -->
+                        <div class="cs-item">
+                            <a href="" class="cs-link">
+                                <div class="cs-picture-group">
+                                    <picture class="cs-picture">
+                                        <source media="(max-width: 600px)"
+                                                srcset="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-06153012.png?v=1712388647&width=600">
+                                        <source media="(min-width: 601px)"
+                                                srcset="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-06153012.png?v=1712388647&width=600">
+                                        <img loading="lazy" decoding="async"
+                                                src="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-06153012.png?v=1712388647&width=600"
+                                                alt="gallery" width="305" height="400">
+                                    </picture>
+                                </div>
+                                <div class="cs-details">
+                                    <h3 class="cs-name">5 Mystery Bags (100g)</h3>
+                                    <div class="cs-actions">
+                                        <div class="cs-flex">
+                                            <span class="cs-price">$15.99</span>
+                                            <div class="cs-stars">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            </div>
+                                        </div>
+                                        <button class="cs-buy">
+                                            <img class="cs-basket"
+                                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                                    alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cs-item">
+                            <a href="" class="cs-link">
+                                <div class="cs-picture-group">
+                                    <picture class="cs-picture">
+                                        <source media="(max-width: 600px)"
+                                                srcset="https://limitlesslollies.com.au/cdn/shop/files/image_bda5e3f7-26d8-41c8-84ff-3a9f7c7d3d6b.heic?v=1682663631&width=493">
+                                        <source media="(min-width: 601px)"
+                                                srcset="https://limitlesslollies.com.au/cdn/shop/files/image_bda5e3f7-26d8-41c8-84ff-3a9f7c7d3d6b.heic?v=1682663631&width=493">
+                                        <img loading="lazy" decoding="async"
+                                                src="https://limitlesslollies.com.au/cdn/shop/files/image_bda5e3f7-26d8-41c8-84ff-3a9f7c7d3d6b.heic?v=1682663631&width=493"
+                                                alt="gallery" width="305" height="400">
+                                    </picture>
+                                </div>
+                                <div class="cs-details">
+                                    <h3 class="cs-name">Gummy-licious</h3>
+                                    <div class="cs-actions">
+                                        <div class="cs-flex">
+                                            <span class="cs-price">$9.60</span>
+                                            <div class="cs-stars">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            </div>
+                                        </div>
+                                        <button class="cs-buy">
+                                            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                                    alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="cs-item">
+                            <a href="" class="cs-link">
+                                <div class="cs-picture-group">
+                                    <picture class="cs-picture">
+                                        <source media="(max-width: 600px)"
+                                                srcset="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-06145939.png?v=1712386808&width=493">
+                                        <source media="(min-width: 601px)"
+                                                srcset="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-06145939.png?v=1712386808&width=493">
+                                        <img loading="lazy" decoding="async"
+                                                src="https://limitlesslollies.com.au/cdn/shop/files/Screenshot2024-04-06145939.png?v=1712386808&width=493"
+                                                alt="gallery" width="305" height="400">
+                                    </picture>
+                                </div>
+                                <div class="cs-details">
+                                    <h3 class="cs-name">$50 International Mystery Box</h3>
+                                    <div class="cs-actions">
+                                        <div class="cs-flex">
+                                            <span class="cs-price">$50</span>
+                                            <div class="cs-stars">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                                <img class="cs-star"
+                                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                                        alt="star" height="24" width="24" loading="lazy" decoding="async">
+                                            </div>
+                                        </div>
+                                        <button class="cs-buy">
+                                            <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/ecomm-bag-icon.svg"
+                                                    alt="buy" height="24" width="24" loading="lazy" decoding="async">
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Repeat for other items -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-308">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <span class="cs-header">About Us</span>
+            <p class="cs-text">
+                We're two sisters from Australia with a dream of living in our small business era.
+            </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Sitemap</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">About</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Shop</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Contant</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Search</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone" href="tel: 123-456-7890">+61 1985 33 999</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email" href="mailto:info@codestitch.com">limitlesslollies@outlook.com</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+                    123 Avenue Street<br> Oak Harbor, WA 98101
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">© Copyright 2024 - LimitlessLollies<a class="cs-copyright-link" href=""></a></span>
+    </div>
+</footer>
+                                
+</body>
+
+</html>
